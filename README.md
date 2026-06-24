@@ -60,7 +60,6 @@ Payroll-Management-System-FPGA/
 ├── images/
 │   └── block_diagram.png
 ├── README.md
-└── LICENSE
 ```
 
 ## Working
@@ -91,6 +90,3 @@ Implemented using Verilog HDL on the Basys 3 FPGA board and synthesized using Xi
 
 Developed as a Semester 3 Logic Circuit Design Group Project.
 
-## License
-
-This project is available under the MIT License.
