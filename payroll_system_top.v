@@ -168,11 +168,10 @@ module wage_calculator(
     output reg [15:0] wage,
     output reg valid
 );
-    // Pay rates per hour for each category (in Rupees)
-    // Category 0: ₹50/hour  (Junior)
-    // Category 1: ₹100/hour (Mid-level)
-    // Category 2: ₹150/hour (Senior)
-    // Category 3: ₹200/hour (Manager)
+// Category 0: ₹200/hour
+// Category 1: ₹150/hour
+// Category 2: ₹100/hour
+// Category 3: ₹50/hour
     
     reg [7:0] rate;
     reg [23:0] temp_wage;  // Temporary for multiplication
@@ -183,13 +182,13 @@ module wage_calculator(
             valid <= 0;
         end else if (calculate) begin
             // Select pay rate based on category
-            case (category)
-                2'b00: rate = 8'd50;   // Junior
-                2'b01: rate = 8'd100;  // Mid-level
-                2'b10: rate = 8'd150;  // Senior
-                2'b11: rate = 8'd200;  // Manager
-                default: rate = 8'd50;
-            endcase
+           case (category)
+    2'b00: rate = 8'd200;  // Category 0
+    2'b01: rate = 8'd150;  // Category 1
+    2'b10: rate = 8'd100;  // Category 2
+    2'b11: rate = 8'd50;   // Category 3
+    default: rate = 8'd200;
+endcase
             
             // Calculate wage (rate * hours)
             temp_wage = rate * hours;
@@ -243,7 +242,7 @@ module threshold_detector(
     input wire [15:0] wage,
     output wire threshold_exceeded
 );
-    parameter THRESHOLD = 16'd1000;
+    parameter THRESHOLD = 16'd2500;
     
     assign threshold_exceeded = (wage > THRESHOLD) ? 1'b1 : 1'b0;
 endmodule
