@@ -19,12 +19,12 @@ A Payroll Management System implemented on the Basys 3 FPGA board using Verilog 
 
 ## Employee Categories
 
-| Category | Designation | Rate (₹/hour) |
-| -------- | ----------- | ------------- |
-| 00       | Junior      | 50            |
-| 01       | Mid-Level   | 100           |
-| 10       | Senior      | 150           |
-| 11       | Manager     | 200           |
+| Category | Rate (₹/hour) |
+| -------- | ------------- |
+| 00       | 50            |
+| 01       | 100           |
+| 10       | 150           |
+| 11       | 200           |
 
 ## System Architecture
 
