@@ -171,7 +171,7 @@ module wage_calculator(
 // Category 0: ₹200/hour
 // Category 1: ₹150/hour
 // Category 2: ₹100/hour
-// Category 3: ₹50/hour
+// Category 3: ₹80/hour
     
     reg [7:0] rate;
     reg [23:0] temp_wage;  // Temporary for multiplication
@@ -186,7 +186,7 @@ module wage_calculator(
     2'b00: rate = 8'd200;  // Category 0
     2'b01: rate = 8'd150;  // Category 1
     2'b10: rate = 8'd100;  // Category 2
-    2'b11: rate = 8'd50;   // Category 3
+    2'b11: rate = 8'd80;   // Category 3
     default: rate = 8'd200;
 endcase
             
