@@ -57,8 +57,9 @@ Payroll-Management-System-FPGA/
 │
 ├── payroll_system_top.v
 ├── payroll_system_constraints.xdc
-├── block diagram.png
-├── block diagram.png  
+├── block_diagram.png
+├── basys3 payroll demo.png
+├── simulation_waveform.png 
 ├── README.md
 ```
 
