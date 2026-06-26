@@ -21,7 +21,7 @@ A Payroll Management System implemented on the Basys 3 FPGA board using Verilog 
 
 | Category | Rate (₹/hour) |
 | -------- | ------------- |
-| 00       | 50            |
+| 00       | 80            |
 | 01       | 100           |
 | 10       | 150           |
 | 11       | 200           |
@@ -57,8 +57,8 @@ Payroll-Management-System-FPGA/
 │
 ├── payroll_system_top.v
 ├── payroll_system_constraints.xdc
-├── images/
-│   └── block_diagram.png
+├── block diagram.png
+├── block diagram.png  
 ├── README.md
 ```
 
